@@ -1,4 +1,13 @@
 terraform {
+  cloud {
+    organization = "Koii"
+
+    workspaces {
+      name = "learning-terraform-aws-eks"
+    }
+
+  }
+
   required_version = ">= 1.3.2"
 
   required_providers {
